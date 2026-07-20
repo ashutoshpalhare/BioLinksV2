@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Primary SEO -->
+  <title>Ashutosh Palhare — Digital Card</title>
+  <meta name="description" content="Ashutosh Palhare (@ashutoshpalhare) — versatile developer. A premium digital business card with all my links in one place." />
+  <meta name="keywords" content="Ashutosh Palhare, ashutoshpalhare, developer, digital card, biolinks, linktree, web development, mobile development" />
+  <meta name="author" content="Ashutosh Palhare" />
+  <meta name="theme-color" content="#09090B" />
+  <link rel="canonical" href="https://ashutoshpalhare.github.io/BioLinks/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Ashutosh Palhare — Digital Card" />
+  <meta property="og:description" content="Versatile developer. All my links in one place." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg" />
+  <meta property="og:url" content="https://ashutoshpalhare.github.io/BioLinksV2/" />
+  <meta property="profile:username" content="ashutoshpalhare" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ashutosh Palhare — Digital Card" />
+  <meta name="twitter:description" content="Versatile developer. All my links in one place." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg" />
+  <meta name="twitter:creator" content="@ashutoshpalhare" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashutosh Palhare",
+    "alternateName": "ashutoshpalhare",
+    "url": "https://ashutoshpalhare.github.io/BioLinks/",
+    "image": "https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg",
+    "jobTitle": "Developer",
+    "description": "Versatile developer with experience in web and mobile development, network security, and ethical hacking.",
+    "sameAs": [
+      "https://github.com/ashutoshpalhare",
+      "https://www.linkedin.com/in/ashutoshpalhare",
+      "https://ashutoshpalhare.github.io",
+      "https://www.instagram.com/ashutoshpalhare/",
+      "https://www.facebook.com/ashutoshpalhare/",
+      "https://twitter.com/ashutoshpalhare",
+      "https://ashutoshpalhare.github.io"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__ring" aria-hidden="true"></div>
+    <p class="loader__text">Loading<span class="loader__dots">...</span></p>
+  </div>
+
+  <!-- Custom cursor -->
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Animated background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__aurora bg__aurora--1"></div>
+    <div class="bg__aurora bg__aurora--2"></div>
+    <div class="bg__aurora bg__aurora--3"></div>
+    <div class="bg__blob bg__blob--1"></div>
+    <div class="bg__blob bg__blob--2"></div>
+    <div class="bg__blob bg__blob--3"></div>
+    <canvas id="particles" class="bg__particles"></canvas>
+    <div id="spotlight" class="bg__spotlight"></div>
+    <div class="bg__noise"></div>
+    <div class="bg__grid"></div>
+  </div>
+
+  <!-- Floating theme toggle -->
+  <button id="theme-toggle" class="theme-fab" aria-label="Toggle color theme" title="Toggle theme">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
+
+  <!-- Digital business card -->
+  <main class="card-wrap">
+    <article class="card glass" data-tilt>
+      <!-- Profile -->
+      <header class="profile">
+        <div class="avatar" data-tilt-inner>
+          <div class="avatar__ring"></div>
+          <div class="avatar__glow"></div>
+          <img class="avatar__img" src="https://raw.githubusercontent.com/ashutoshpalhare/BioLinks/main/assets/ap.jpeg" alt="Portrait of Ashutosh Palhare" width="120" height="120" loading="eager" />
+          <span class="avatar__status" aria-label="Online"></span>
+          <span class="avatar__verified" title="Verified" aria-label="Verified">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <h1 class="profile__name">Ashutosh Palhare</h1>
+        <p class="profile__username">@ashutoshpalhare</p>
+        <p class="profile__bio">Versatile developer crafting web, mobile &amp; secure experiences.</p>
+        <div class="profile__meta">
+          <span class="chip-meta"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> India</span>
+          <span class="chip-meta chip-meta--available"><span class="dot"></span> Available</span>
+        </div>
+      </header>
+
+      <!-- Social icons -->
+      <nav class="socials reveal" role="list" aria-label="Social links">
+        <a class="soc" href="https://github.com/ashutoshpalhare" target="_blank" rel="noopener noreferrer" data-label="GitHub" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="soc" href="https://www.linkedin.com/in/ashutoshpalhare" target="_blank" rel="noopener noreferrer" data-label="LinkedIn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a class="soc" href="https://twitter.com/ashutoshpalhare" target="_blank" rel="noopener noreferrer" data-label="Twitter / X" aria-label="Twitter / X">
+          <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="soc" href="https://www.instagram.com/ashutoshpalhare/" target="_blank" rel="noopener noreferrer" data-label="Instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a class="soc" href="https://www.facebook.com/ashutoshpalhare/" target="_blank" rel="noopener noreferrer" data-label="Facebook" aria-label="Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a class="soc" href="https://ashutoshpalhare.github.io" target="_blank" rel="noopener noreferrer" data-label="Blog" aria-label="Blog">
+          <i class="fa-solid fa-blog" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <span class="divider" aria-hidden="true"></span>
+
+      <!-- Link cards -->
+      <div class="links">
+        <a class="link-card reveal ripple" data-delay="0" href="https://github.com/ashutoshpalhare" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">GitHub</span><span class="link-card__sub">Open source &amp; projects</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="60" href="https://www.linkedin.com/in/ashutoshpalhare" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--li"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">LinkedIn</span><span class="link-card__sub">Professional profile</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="120" href="https://ashutoshpalhare.github.io" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--web"><i class="fa-solid fa-globe" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">Portfolio Website</span><span class="link-card__sub">Selected work &amp; about</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="180" href="https://www.instagram.com/ashutoshpalhare/" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--ig"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">Instagram</span><span class="link-card__sub">Daily &amp; behind the scenes</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="240" href="https://www.facebook.com/ashutoshpalhare/" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--fb"><i class="fa-brands fa-facebook" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">Facebook</span><span class="link-card__sub">Connect &amp; updates</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="300" href="https://twitter.com/ashutoshpalhare" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--tw"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">Twitter / X</span><span class="link-card__sub">Thoughts &amp; shares</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card reveal ripple" data-delay="360" href="https://ashutoshpalhare.github.io" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon link-card__icon--blog"><i class="fa-solid fa-blog" aria-hidden="true"></i></span>
+          <span class="link-card__body"><span class="link-card__title">Blog</span><span class="link-card__sub">Writing &amp; tutorials</span></span>
+          <i class="fa-solid fa-arrow-right link-card__arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <span class="divider" aria-hidden="true"></span>
+
+      <!-- Quick actions -->
+      <div class="actions reveal" data-delay="420">
+        <button class="action magnetic" data-copy="https://ashutoshpalhare.github.io/BioLinks/" type="button" aria-label="Copy link">
+          <i class="fa-solid fa-link" aria-hidden="true"></i><span>Copy link</span>
+        </button>
+        <button class="action magnetic" data-share type="button" aria-label="Share profile">
+          <i class="fa-solid fa-share-nodes" aria-hidden="true"></i><span>Share</span>
+        </button>
+        <button class="action magnetic" data-copy-text="ashutoshpalhare@gmail.com" type="button" aria-label="Copy email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Copy email</span>
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">© <span id="year"></span> Ashutosh Palhare</p>
+  </footer>
+
+  <!-- Toasts -->
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" referrerpolicy="no-referrer"></script>
+
+  <!-- App -->
+  <script src="./script.js"></script>
+</body>
+</html>
