@@ -15,6 +15,7 @@ A premium, single-page digital identity card — inspired by **Linktree Pro** an
 ## 🖼️ Preview
 
 A centered glassmorphic card floating over an animated aurora background — avatar with a verified badge, name, bio, social icons, and a stack of premium interactive link cards.
+
 <img width="588" height="877" alt="SS1" src="https://github.com/user-attachments/assets/f2015f69-c7d7-4d7e-a587-40f5d5fdfd89" />
 
 ---
